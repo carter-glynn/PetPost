@@ -3,7 +3,7 @@ import boto3, json, uuid, os
 
 app = Flask(__name__)
 s3 = boto3.client('s3')
-BUCKET = 'petpost-images-cglynn'  # Replace with your actual bucket name
+BUCKET = 'petpost-images-cglynn'
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
